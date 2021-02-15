@@ -1,4 +1,4 @@
-// Implement the TreeNode class here first befoer continuing
+// Implement the TreeNode class here first before continuing
 
 class BinaryTreeNode {
     constructor(){
@@ -12,16 +12,27 @@ class BinaryTree {
     constructor(head = null){
         this.head = head;
     }
-
-    preOrder(head) {
-
-    }
-
-    inOrder(head) {
+    
+    // Breadth First Traversal - Iterative
+    breadthFirstTraveral() {
 
     }
 
-    postOrder(head) {
+    // Depth First Traversal - Iterative
+    depthFirstTraversal() {
+
+    }
+
+    // Depth First Traversals - Recursive
+    preOrder() {
+
+    }
+
+    inOrder() {
+
+    }
+
+    postOrder() {
 
     }
 }
