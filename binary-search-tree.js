@@ -65,10 +65,10 @@ class BinarySearchTree {
 
     // Breadth First Traversal - Iterative
     breadthFirstTraversal(current = this.root) {
-        // initialize a queue with the root node 
+        // initialize a queue with the root node
         let queue = [];
         queue.push(current);
-        // while the queue is not empty 
+        // while the queue is not empty
         while (queue.length) {
             if (queue[0].left) {
                 queue.push(queue[0].left);
@@ -92,9 +92,33 @@ class BinarySearchTree {
     // Depth First Traversal - Iterative
     depthFirstTraversal(current = this.root) {
 
-        // Fill this in
+          // initialize a stack with the root node
+      let stack = [];
+      stack.push(current);
+      // while the stack is not empty
+      while (stack.length) {
+        if (stack[stack.length - 1].left) {
+            stack.push(stack[stack.length - 1].left);
+            debugger;
+        }
+        if (stack[stack.length - 1].right) {
+            stack.push(stack[stack.length - 1].right);
+            debugger;
+        }
+      // print and remove first node in stack
+        console.log(stack[stack.length - 1].val);
+        debugger;
+        stack.pop();
+        debugger;
+      }
 
+      // if the node has a left node
+        // push the left node on the back of the stack
+      // if the node has a right node
+        // push the right node on the back of the stack
     }
+
+
 
     preOrderTraversal(currentNode = this.root) {
 
