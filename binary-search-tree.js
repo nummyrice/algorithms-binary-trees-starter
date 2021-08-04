@@ -96,20 +96,24 @@ class BinarySearchTree {
       let stack = [];
       stack.push(current);
       // while the stack is not empty
+
       while (stack.length) {
-        if (stack[stack.length - 1].left) {
-            stack.push(stack[stack.length - 1].left);
-            debugger;
+
+        console.log(stack[stack.length - 1].val);
+
+
+      let targetNode = stack.pop();
+
+        if (targetNode.left) {
+            stack.push(targetNode.left);
+
         }
-        if (stack[stack.length - 1].right) {
-            stack.push(stack[stack.length - 1].right);
-            debugger;
+        if (targetNode.right) {
+            stack.push(targetNode.right);
+
         }
       // print and remove first node in stack
-        console.log(stack[stack.length - 1].val);
-        debugger;
-        stack.pop();
-        debugger;
+
       }
 
       // if the node has a left node
